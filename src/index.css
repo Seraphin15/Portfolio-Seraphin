@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes:  
+  dracula,
+  cyberpunk,
+  synthwave,
+  halloween,
+  forest,
+  luxury,
+  aqua
+}
+@keyframes float1 {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-200px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(200px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(200px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes float4 {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-200px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+.animate-float1 {
+  animation: float1 linear infinite;
+}
+.animate-float2 {
+  animation: float2 linear infinite;
+}
+.animate-float3 {
+  animation: float3 linear infinite;
+}
+.animate-float4 {
+  animation: float4 linear infinite;
+}
+html {
+  scroll-behavior: smooth;
+}
+
