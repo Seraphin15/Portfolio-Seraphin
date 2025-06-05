@@ -4,7 +4,6 @@ import { GraduationCap, Briefcase, Code2 } from "lucide-react";
 const About = () => {
   return (
     <section id="about">
-    {/* ... */}
 
     <div className="bg-base-300 py-16 px-6 md:px-20 mb-10 md:mb-32">
       <div className="max-w-4xl mx-auto text-center">
