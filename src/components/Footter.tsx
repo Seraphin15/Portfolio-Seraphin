@@ -32,7 +32,7 @@ const Footer = () => {
 
   return (
     <section
-      id="contact"
+      id="footter"
       className="bg-base-200 border-t border-gray-300 dark:border-gray-700 py-16"
     >
       <div className="max-w-6xl mx-auto px-5">

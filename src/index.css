@@ -81,3 +81,42 @@ html {
   scroll-behavior: smooth;
 }
 
+
+@keyframes border-stream {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #6366f1; /* indigo-500 */
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+.animate-border-stream {
+  animation: border-stream 4s infinite ease-in-out;
+}
+
+@keyframes color-pulse {
+  0% {
+    background-color: #6366F1;
+  }
+  25% {
+    background-color: #EC4899;
+  }
+  50% {
+    background-color: #14B8A6;
+  }
+  75% {
+    background-color: #F59E0B;
+  }
+  100% {
+    background-color: #6366F1;
+  }
+}
+
+.animate-color-pulse {
+  animation: color-pulse 6s infinite linear;
+}
+
