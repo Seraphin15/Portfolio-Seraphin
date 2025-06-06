@@ -12,7 +12,7 @@ const projects = [
     description: 'Application de gestion interne pour ODC avec tableau de bord, statistiques et gestion des utilisateurs.',
     technologies: ['JavaScript'],
     demoLink: '#',
-    reposLink: '#',
+    reposLink: 'https://github.com/Seraphin15/Portfolio-Seraphin',
     image: img1,
   },
   {

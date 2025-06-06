@@ -16,7 +16,7 @@ export const Navbar = () => {
 
   return (
     <>
-      {/* Navbar pour Desktop */}
+      {/* Navbar Desktop */}
       <motion.section
         id="homes"
         className="hidden md:block sticky top-0 z-50 bg-base-100 shadow-sm"
@@ -39,13 +39,20 @@ export const Navbar = () => {
         </div>
       </motion.section>
 
-      {/* Floating Menu Icon - Mobile */}
+      {/* Floating Menu Button - Mobile */}
       <button
         className="fixed top-4 right-4 z-50 bg-primary text-white p-3 rounded-full shadow-lg md:hidden"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Menu"
       >
-        {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        <motion.div
+          animate={{
+            color: ["#60a5fa", "#34d399", "#fbbf24", "#a78bfa", "#60a5fa"], // pastel colors
+          }}
+          transition={{ duration: 6, repeat: Infinity }}
+        >
+          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </motion.div>
       </button>
 
       {/* Mobile Menu Overlay */}
@@ -58,6 +65,12 @@ export const Navbar = () => {
             transition={{ duration: 0.3 }}
             className="fixed inset-0 bg-base-200/95 z-40 flex flex-col items-center justify-center space-y-6 md:hidden"
           >
+            {/* Logo visible */}
+            <a href="#" className="absolute top-6 left-6 flex items-center text-2xl font-bold">
+              <AtSign className="mr-1" />
+              SERA<span className="text-secondary">PHIN</span>
+            </a>
+
             <MobileLink href="#homes" onClick={() => setIsOpen(false)}>Accueil</MobileLink>
             <MobileLink href="#about" onClick={() => setIsOpen(false)}>A Propos</MobileLink>
             <MobileLink href="#experiences" onClick={() => setIsOpen(false)}>Expériences</MobileLink>
@@ -70,7 +83,7 @@ export const Navbar = () => {
   );
 };
 
-// Desktop Nav Link
+// Desktop NavLink
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
   <li>
     <a href={href} className="btn btn-sm btn-ghost btn-fancy text-lg">
@@ -79,7 +92,7 @@ const NavLink = ({ href, children }: { href: string; children: React.ReactNode }
   </li>
 );
 
-// Mobile Nav Link
+// Mobile NavLink
 const MobileLink = ({
   href,
   children,
