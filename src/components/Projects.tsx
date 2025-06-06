@@ -10,9 +10,9 @@ const projects = [
     id: 1,
     title: 'Orange Digital Center',
     description: 'Application de gestion interne pour ODC avec tableau de bord, statistiques et gestion des utilisateurs.',
-    technologies: ['JavaScript'],
+    technologies: ['JavaScript' , 'CSS', 'HTML'],
     demoLink: '#',
-    reposLink: 'https://github.com/Seraphin15/Portfolio-Seraphin',
+    reposLink: 'https://github.com/Seraphin15/ODC-madagascar',
     image: img1,
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     description: 'Système de gestion RH avec Java pour gérer employés, salaires et congés.',
     technologies: ['Java'],
     demoLink: '#',
-    reposLink: '#',
+    reposLink: 'https://github.com/Seraphin15/Centre-Fiscal',
     image: img2,
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     description: 'Mon portfolio personnel en React & Vite, mettant en valeur mes projets et compétences.',
     technologies: ['React', 'Vite'],
     demoLink: '#',
-    reposLink: '#',
+    reposLink: 'https://github.com/Seraphin15/Portfolio-Seraphin',
     image: img3,
   }
 ];
